@@ -5,21 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TaskEarn - Earn Rewards</title>
+
   <style>
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f7fb;
       color: #17243a;
     }
+
     header {
       background: #123c75;
       color: white;
       padding: 22px;
       text-align: center;
     }
-    main { padding: 20px; max-width: 700px; margin: auto; }
+
+    main {
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
     .card {
       background: white;
       padding: 20px;
@@ -27,6 +36,7 @@
       border-radius: 14px;
       box-shadow: 0 3px 12px #00000010;
     }
+
     button {
       background: #1769e0;
       color: white;
@@ -34,43 +44,54 @@
       padding: 12px 20px;
       border-radius: 8px;
       font-size: 15px;
+      cursor: pointer;
     }
-    .balance { font-size: 30px; font-weight: bold; color: #16834b; }
+
+    .balance {
+      font-size: 30px;
+      font-weight: bold;
+      color: #16834b;
+    }
   </style>
 </head>
-  <script src="script.js"></script>
+
 <body>
+
   <header>
     <h1>TaskEarn</h1>
     <p>Complete Tasks. Earn Rewards.</p>
-    <div>
-  <p>Demo Survey — ₹10</p>
-  <button onclick="completeTask(0)">Complete</button>
-
-  <p>Simple Quiz — ₹5</p>
-  <button onclick="completeTask(1)">Complete</button>
-
-  <p>Daily Check-in — ₹2</p>
-  <button onclick="completeTask(2)">Complete</button>
-    </div>
   </header>
+
   <main>
+
     <div class="card">
       <h2>My Demo Wallet</h2>
       <p class="balance" id="balance">₹0.00</p>
       <small>Demo balance only — no real money.</small>
     </div>
+
     <div class="card">
       <h2>Surveys & Tasks</h2>
-      <p>Complete surveys and simple tasks.</p>
-      <button onclick="alert('Demo: Tasks coming soon!')">Explore Tasks</button>
+
+      <p>Demo Survey — ₹10</p>
+      <button onclick="completeTask(0)">Complete</button>
+
+      <p>Simple Quiz — ₹5</p>
+      <button onclick="completeTask(1)">Complete</button>
+
+      <p>Daily Check-in — ₹2</p>
+      <button onclick="completeTask(2)">Complete</button>
     </div>
+
     <div class="card">
       <h2>Admin Dashboard</h2>
       <p>Manage tasks, users and demo rewards.</p>
-      <button onclick="alert('Admin dashboard coming soon!')">Admin Login</button>
+      <button onclick="adminLogin()">Admin Login</button>
     </div>
+
   </main>
+
   <script src="script.js"></script>
+
 </body>
 </html>
