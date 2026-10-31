@@ -1,12 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TaskEarn</title>
+  <title>TaskEarn - Earn Rewards</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #17243a;
+    }
+    header {
+      background: #123c75;
+      color: white;
+      padding: 22px;
+      text-align: center;
+    }
+    main { padding: 20px; max-width: 700px; margin: auto; }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 14px;
+      box-shadow: 0 3px 12px #00000010;
+    }
+    button {
+      background: #1769e0;
+      color: white;
+      border: 0;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+    .balance { font-size: 30px; font-weight: bold; color: #16834b; }
+  </style>
 </head>
 <body>
-  <h1>Welcome to TaskEarn</h1>
-  <p>Your earning journey starts here.</p>
+  <header>
+    <h1>TaskEarn</h1>
+    <p>Complete Tasks. Earn Rewards.</p>
+  </header>
+  <main>
+    <div class="card">
+      <h2>My Demo Wallet</h2>
+      <p class="balance">₹0.00</p>
+      <small>Demo balance only — no real money.</small>
+    </div>
+    <div class="card">
+      <h2>Surveys & Tasks</h2>
+      <p>Complete surveys and simple tasks.</p>
+      <button onclick="alert('Demo: Tasks coming soon!')">Explore Tasks</button>
+    </div>
+    <div class="card">
+      <h2>Admin Dashboard</h2>
+      <p>Manage tasks, users and demo rewards.</p>
+      <button onclick="alert('Admin dashboard coming soon!')">Admin Login</button>
+    </div>
+  </main>
 </body>
 </html>
