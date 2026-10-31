@@ -7,11 +7,19 @@ const tasks = [
   { name: "Daily Check-in", reward: 2 }
 ];
 
+const completedTasks = [];
+
 function completeTask(index) {
   const task = tasks[index];
 
   if (!task) return;
 
+  if (completedTasks.includes(index)) {
+    alert("You have already completed this demo task!");
+    return;
+  }
+
+  completedTasks.push(index);
   balance += task.reward;
 
   document.getElementById("balance").textContent =
